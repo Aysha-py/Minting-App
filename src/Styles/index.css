@@ -12,25 +12,5 @@ code {
     monospace;
 }
 
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  margin: 30px;
-  justify-content: space-evenly;
-}
 
-.title {
-  font-size: 20px;
-  margin-top: 20px;
-}
 
-.image {
-  width: 200px;
-  height: 200px;
-}
-
-.center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}

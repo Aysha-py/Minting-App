@@ -27,15 +27,16 @@ export const RetrieveNft = ({ bunzz, userAddress }) => {
 
   return (
     <div className="wrapper">
-      <p className="title">Step2: Get your NFT</p>
+      <p className="title">Step2: view your minted NFT</p>
       <input
         placeholder="token ID"
         value={tokenId}
         onChange={(e) => setTokenId(e.target.value)}
         type="text"
+        className="forminput"
       />
       {onGoing ? (
-        <div className="center">Loading...</div>
+        <div className="waitMessage">Loading...</div>
       ) : (
         <button onClick={submit}>get</button>
       )}

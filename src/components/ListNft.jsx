@@ -80,29 +80,39 @@ export const ListNft = ({ bunzz, userAddress }) => {
 
   return (
     <div className="wrapper">
-      <p className="title">
-        Step1: Mint your NFT with IPFS
-      </p>
+      <div className="tokenDetails">
+      <label>
+        Token Name
+      </label><br></br>
       <input
-        placeholder="Token Name"
+        placeholder="e.g web3ladies Token"
         value={name}
         onChange={(e) => setName(e.target.value)}
         type="text"
+        className="forminput"
       />
+      </div>
+
+      <div className="tokenDetails">
+      <label>
+        Description
+      </label><br></br>
       <input
-        placeholder="Description"
+        placeholder="e.g a female geek"
         value={description}
         onChange={(e) => setDescription(e.target.value)}
         type="text"
+        className="forminput"
       />
+      </div>
       <input type="file" accept="image/*" onChange={select} />
       {base64 ? (
-          <img src={base64} alt="hoge" className="image" />
+          <img src={base64} alt="hoge" className="nftimage" />
       ) : (
         <></>
       )}
       {onGoing ? (
-        <div className="center">
+        <div className="waitMessage">
           Loading...
         </div>
       ) : (

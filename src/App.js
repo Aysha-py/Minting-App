@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { ListNft } from "./components/ListNft";
 import { RetrieveNft } from "./components/RetrieveNft";
 import { NavBar } from "./components/navbar";
+import {Tasks} from "./components/tasks"
 import bunzz from "bunzz-sdk";
 
 const DAPP_ID = process.env.REACT_APP_DAPP_ID;
@@ -31,6 +32,7 @@ const App = () => {
 
   return (
     <div className="section_container">
+        <Tasks />
       <section className="section">
         <h1>Mint Your NFT</h1>
         <NavBar />

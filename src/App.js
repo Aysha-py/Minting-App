@@ -30,17 +30,19 @@ const App = () => {
   };
 
   return (
-    <section className="section">
-      <h1>Mint Your NFT</h1>
-      <NavBar />
+    <div className="section_container">
+      <section className="section">
+        <h1>Mint Your NFT</h1>
+        <NavBar />
 
-      <div className="nftMinter">
-        <ListNft bunzz={handler} userAddress={userAddress} />
-      </div>
-      <div className="nftChecker">
-        <RetrieveNft bunzz={handler} userAdress={userAddress} />
-      </div>
-    </section>
+        <div className="nftMinter">
+          <ListNft bunzz={handler} userAddress={userAddress} />
+        </div>
+        <div className="nftChecker">
+          <RetrieveNft bunzz={handler} userAdress={userAddress} />
+        </div>
+      </section>
+    </div>
   );
 };
 

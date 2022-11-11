@@ -1,8 +1,8 @@
-import '../src/Styles/App.css';
+import "../src/Styles/App.css";
 import { useEffect, useState } from "react";
 import { ListNft } from "./components/ListNft";
 import { RetrieveNft } from "./components/RetrieveNft";
-import {NavBar} from "./components/navbar";
+import { NavBar } from "./components/navbar";
 import bunzz from "bunzz-sdk";
 
 const DAPP_ID = process.env.REACT_APP_DAPP_ID;
@@ -30,17 +30,16 @@ const App = () => {
   };
 
   return (
-    
     <section className="section">
+      <h1>Mint Your NFT</h1>
       <NavBar />
 
-        <div className="nftMinter">
-          <ListNft bunzz={handler} userAddress={userAddress} />          
-        </div>
-        <div className="nftChecker">
-          <RetrieveNft bunzz={handler} userAdress={userAddress} />      
-        </div>
-
+      <div className="nftMinter">
+        <ListNft bunzz={handler} userAddress={userAddress} />
+      </div>
+      <div className="nftChecker">
+        <RetrieveNft bunzz={handler} userAdress={userAddress} />
+      </div>
     </section>
   );
 };

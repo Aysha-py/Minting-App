@@ -17,6 +17,7 @@ code {
   flex-direction: column;
   margin: 30px;
   justify-content: space-evenly;
+  
 }
 
 .title {
@@ -33,4 +34,5 @@ code {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: rgb(249, 192, 249);
 }

@@ -72,6 +72,29 @@ h1 {
   border: 1px solid rgba(209, 213, 219, 0.3);
   padding-bottom: 15px;
 }
+.task-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  row-gap: 40px;
+  column-gap: 40px;
+}
+.ques-wrapper{
+  box-shadow:  rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-bottom: 2px  solid white;
+  padding-left:16px;
+  padding-right:16px;
+
+}
+.Task{
+  color: antiquewhite;
+  font-size: 18px;
+}
+.activeTask{
+  color: rgb(228, 216, 216);
+  font-size: 2em;
+  margin-bottom: 16px;
+}
 .wrapper {
   display: flex;
   flex-direction: column;

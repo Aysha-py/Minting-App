@@ -1,63 +1,10 @@
-body {
-  background: url(../images/background.jpg);
-  /* background: linear-gradient(to right, #ffb997, #bb4c87); */
-  width: 100%;
-  padding-bottom: 40px;
-}
-header {
-  font-weight: 700;
-  font-size: 20px;
-}
-.nav-bar {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 30px 50px 30px 200px;
-  gap: 100px;
-  color: #fff;
 
-  font-size: 18px;
-  background-color: rgb(40, 38, 38);
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  position: fixed;
-  top: 0;
-	left: 0;
-	right: 0;
-	z-index: 1;
-
-
-}
-.nav-options {
-  font-weight: 500;
-  display: flex;
-  flex-direction: row;
-  gap: 50px;
-  justify-content: flex-end;
-  
-}
-a {
-  text-decoration: none;
-  color: #FFF;
-}
-a:hover {
-  background-color: #411500;
-  padding: 8px;
-  border-radius: 8px;
-}
 .about {
   /* width: 60%; */
   text-align: center;
   padding: 40px;
   color: #ffb997;
   font-size: 22px;
-}
-
-h1 {
-  text-align: center;
-  margin-bottom: 20px;
-  padding-top: 10px;
-  color: #411500;
 }
 .section {
   backdrop-filter: blur(5px);
@@ -72,29 +19,10 @@ h1 {
   border: 1px solid rgba(209, 213, 219, 0.3);
   padding-bottom: 15px;
 }
-.task-container{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  row-gap: 40px;
-  column-gap: 40px;
+a{
+  text-decoration: none;
 }
-.ques-wrapper{
-  box-shadow:  rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  border-bottom: 2px  solid white;
-  padding-left:16px;
-  padding-right:16px;
 
-}
-.Task{
-  color: antiquewhite;
-  font-size: 18px;
-}
-.activeTask{
-  color: rgb(228, 216, 216);
-  font-size: 2em;
-  margin-bottom: 16px;
-}
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -114,19 +42,7 @@ input {
 .tokenDetails {
   margin-bottom: 1em;
 }
-button {
-  background-color: white;
-  justify-content: center;
-  color: #411500;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  padding: 6px;
-  border-radius: 10px;
-  font-size: 16px;
-  font-weight: 600;
-  border: none;
-  width: 50%;
-}
+
 label {
   color: white;
 }

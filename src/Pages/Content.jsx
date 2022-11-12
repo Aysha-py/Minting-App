@@ -2,7 +2,7 @@ import React from 'react'
 import { useEffect, useState } from "react";
 import { ListNft } from "../components/ListNft";
 import bunzz from "bunzz-sdk";
-import { NavBar } from '../components/navbar';
+import { NavBar } from '../components/Navbar';
 
 
 const DAPP_ID = process.env.REACT_APP_DAPP_ID;
@@ -29,7 +29,7 @@ const Content = () => {
 	  const [handler, setHandler] = useState();
   const [userAddress, setUserAddress] = useState("");
 		return (
-				<div>
+				<div className='content-container'>
 				<section className="section">
 					<NavBar />
 						

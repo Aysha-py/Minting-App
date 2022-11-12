@@ -1,49 +1,28 @@
 import "../src/Styles/App.css";
-import { useEffect, useState } from "react";
-import { ListNft } from "./components/ListNft";
-import { RetrieveNft } from "./components/RetrieveNft";
-import { NavBar } from "./components/navbar";
-import {Tasks} from "./components/tasks"
-import bunzz from "bunzz-sdk";
 
-const DAPP_ID = process.env.REACT_APP_DAPP_ID;
-const API_KEY = process.env.REACT_APP_API_KEY;
+
+import {Tasks} from "./components/tasks"
+
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Content from "./Pages/Content";
+import { ListNft } from "./components/ListNft";
+
 
 const App = () => {
-  const [handler, setHandler] = useState();
-  const [userAddress, setUserAddress] = useState("");
 
-  useEffect(() => {
-    setup();
-  }, []);
 
-  const setup = async () => {
-    const handler = await bunzz.initializeHandler({
-      dappId: DAPP_ID,
-      apiKey: API_KEY,
-    });
 
-    const userAddress = await handler.getSignerAddress();
-
-    console.log(userAddress);
-    setUserAddress(userAddress);
-    setHandler(handler);
-  };
 
   return (
     <div className="section_container">
-        <Tasks />
-      <section className="section">
-        <h1>Mint Your NFT</h1>
-        <NavBar />
-
-        <div className="nftMinter">
-          <ListNft bunzz={handler} userAddress={userAddress} />
-        </div>
-        <div className="nftChecker">
-          <RetrieveNft bunzz={handler} userAdress={userAddress} />
-        </div>
-      </section>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Tasks />} exact />
+          <Route path="/tasks" element={<Tasks />} />
+          <Route path="/nftlisting" element={<ListNft />} />
+          <Route path="/mint" element={<Content />} />
+        </Routes>
+      </Router>
     </div>
   );
 };

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { NFTStorage, File } from "nft.storage";
+import { Link } from "react-router-dom";
 
 const nftStorage = new NFTStorage({
   token: process.env.REACT_APP_NFT_STORAGE_KEY,
@@ -80,39 +81,30 @@ export const ListNft = ({ bunzz, userAddress }) => {
 
   return (
     <div className="wrapper">
-      <div className="tokenDetails">
-      <label>
-        Token Name
-      </label><br></br>
+      <button className='back-button'><Link to={"/"}>Go back</Link></button>
+      <p className="title">
+        Step1: Mint your NFT with IPFS
+      </p>
       <input
-        placeholder="e.g web3ladies Token"
+        placeholder="Token Name"
         value={name}
         onChange={(e) => setName(e.target.value)}
         type="text"
-        className="forminput"
       />
-      </div>
-
-      <div className="tokenDetails">
-      <label>
-        Description
-      </label><br></br>
       <input
-        placeholder="e.g a female geek"
+        placeholder="Description"
         value={description}
         onChange={(e) => setDescription(e.target.value)}
         type="text"
-        className="forminput"
       />
-      </div>
       <input type="file" accept="image/*" onChange={select} />
       {base64 ? (
-          <img src={base64} alt="hoge" className="nftimage" />
+          <img src={base64} alt="hoge" className="image" />
       ) : (
         <></>
       )}
       {onGoing ? (
-        <div className="waitMessage">
+        <div className="center">
           Loading...
         </div>
       ) : (

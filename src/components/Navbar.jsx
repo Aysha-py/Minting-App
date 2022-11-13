@@ -4,12 +4,11 @@ function NavBar() {
   return (
     <>
       <nav>
-        
         <div class="nav-bar">
           <div classname="logo">
-            <p>CRYPTOFLUENCING</p>
+            <p className="app-name">CRYPTOFLUENCING</p>
           </div>
-         
+
           <div class="nav-options">
             <div className="nav-items">
               <ul>
@@ -32,7 +31,6 @@ function NavBar() {
             </div>
           </div>
         </div>
-       
       </nav>
     </>
   );

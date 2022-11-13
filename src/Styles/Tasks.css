@@ -1,88 +1,84 @@
-.task-area{
-	background-color: #000;
-box-sizing: border-box;
-padding: 40px;
-font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+.task-area {
+  background-color: #000;
+  box-sizing: border-box;
+  padding: 40px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.activeTask {
+  text-align: center;
+  border: 1px solid #fff;
+  padding: 10px 0;
+  border-radius: 20px;
+  background-color: #5a448e;
+}
 
+.about-app {
+  color: white;
+  padding: 200px 0;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
 }
-.activeTask{
-text-align: center;
-	border: 1px solid #fff;
-	padding: 20px 0;
-	border-radius: 20px;
-	background-color: #5a448e;
+h1 {
+  font-size: 24px;
 }
+.about-info {
+  width: 50%;
+  line-height: 2;
+}
+.about-img {
+  background: url(../images/ezgif.com-gif-maker-removebg-preview.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 40%;
+  border-radius: 100px;
+}
+.instructions {
+  color: white;
 
-.about-app{
-	color:white;
-	padding: 200px 0;
-	font-size: 24px;
-	display: flex;
-	justify-content: space-between;
-	
+  margin: 0 auto;
+  text-align: center;
+  line-height: 3;
 }
-.about-info{
-width: 50%;
-line-height: 2;
-}
-.about-img{
-	background:url(../images/ezgif.com-gif-maker-removebg-preview.png);
-	background-repeat: no-repeat;
-background-size: cover;
-	background-position: center;
-	width: 40%;
-	border-radius:100px;
-
-}
-.instructions{
-	color:white;
-
-	margin: 0 auto;
-		text-align: center;
-		line-height: 3;
-
-}
-.instructions-title{
-	border-bottom: 8px solid white;
+.instructions-title {
+  border-bottom: 8px solid white;
 }
 .steps {
-text-align: center;
-	width: 50%;
-	margin: auto;
-
+  text-align: center;
+  width: 50%;
+  margin: auto;
 }
-.steps li{
-text-align: justify;
-font-size: 20px;
+.steps li {
+  text-align: justify;
+  font-size: 20px;
 }
 
-.task-container{
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-
+.task-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
-.ques-wrapper{
-background:white;
+.ques-wrapper {
+  background: white;
 
-	padding:30px 20px;
-	border: 1px solid;
-	margin: 20px;
-	border-radius: 20px;
+  padding: 30px 20px;
+  border: 1px solid;
+  margin: 20px;
+  border-radius: 20px;
 }
-.mintBtn{
-padding: 10px;
-border-radius: 10px;
-color: white;
-	border: 1px solid #80489C;
-	font-size: 20px;
-
+.mintBtn {
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+  border: 1px solid #80489c;
+  font-size: 20px;
 }
-.Task{
-	color: #80489C;
+.Task {
+  color: #80489c;
 }
 .mintBtn:hover {
   background-color: black;
-		color: #fff;
-		border: 1px solid #80489C;
-
+  color: #fff;
+  border: 1px solid #80489c;
 }

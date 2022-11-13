@@ -1,56 +1,54 @@
-nav{
-	display: flex;
-	font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-	
-
+.app-name {
+  padding-bottom: 15px;
+}
+nav {
+  display: flex;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 .nav-bar {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 30px 50px 30px 200px;
-  gap: 100px;
-	display: flex;
-	color: #a38bdc;
-	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-	justify-content: space-between;
-	align-items: center;
-	padding: 10px 50px;
-	background:#000;
-	cursor: pointer;
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-	z-index: 1;
-	border-bottom: 8px solid white;
+  padding: 20px 50px 20px 130px;
+  /* gap: 100px; */
+  display: flex;
+  color: #a38bdc;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 10px 40px; */
+  background: #000;
+  cursor: pointer;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  border-bottom: 8px solid white;
 }
-.nav-bar p{
-
-	font-size: 24px;
-	
-
+.nav-bar p {
+  font-size: 24px;
 }
-.nav-bar ul{
-	display: flex;
-	justify-content: space-evenly;
-	list-style: none;
+.nav-bar ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
 }
-.nav-bar li{
-padding:5px 40px;
-transition: border 5ms all ;
-white-space: nowrap;
-font-size: 1.2rem;
-
+.nav-bar li {
+  padding: 5px 20px;
+  transition: border 5ms all;
+  white-space: nowrap;
+  font-size: 1.2rem;
 }
-.nav-bar li a{
-color: white;
-text-decoration: none;
+.nav-bar li a {
+  color: white;
+  text-decoration: none;
 }
 
 .nav-bar a:hover {
   background-color: #5a448e;
-  padding: 20px;
+  padding: 15px;
   border-radius: 8px;
 }

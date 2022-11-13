@@ -26,7 +26,7 @@ function Tasks(){
            <div className='steps'>
             <h2> To start Earning Tokens, Follow the follow the steps: </h2>
              <ol>
-               <li>Make Sure your wallet isis up and running</li>
+               <li>Make Sure your wallet is up and running</li>
                <li>Choose a bounty to slive based on your niche</li>
                <li>After picking bounty, do the task required by bounty</li>
                <li>After the task, Click on Submit </li>
@@ -41,9 +41,10 @@ function Tasks(){
                   return (
                     <div className="ques-wrapper" key={task.id}>
                       <p className="Task">
-                        Task: <br></br>
+                        <span>Task</span> <br></br>
                         {task.question}
                       </p>
+                      <p className='note'>N/B solution can be an Img or pdf.</p>
                       <button className="mintBtn">
                         <Link to={"./nftlisting"}>Submit Solution</Link>
                       </button>

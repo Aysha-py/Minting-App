@@ -21,6 +21,8 @@ text-align: center;
 	justify-content: space-between;
 	
 }
+
+
 .about-info{
 width: 50%;
 line-height: 2;
@@ -85,4 +87,13 @@ color: white;
 		color: #fff;
 		border: 1px solid #80489C;
 
+}
+span{
+	font-size: 20px;
+	font-weight: 600;
+
+}
+.note{
+	color: green;
+	font-size: 13px;
 }

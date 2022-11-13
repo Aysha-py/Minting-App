@@ -23,12 +23,7 @@ box-sizing: border-box;
   height: 200px;
 }
 
-.center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgb(249, 192, 249);
-}
+
 @import url(../Styles/Navbar.css);
 @import url(../Styles/Content.css);
 @import url(../Styles/Tasks.css);

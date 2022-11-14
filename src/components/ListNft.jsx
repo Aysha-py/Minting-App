@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { NFTStorage, File } from "nft.storage";
 import { Link } from "react-router-dom";
+import '../Styles/ListNft.css'
 
 const nftStorage = new NFTStorage({
   token: process.env.REACT_APP_NFT_STORAGE_KEY,
@@ -72,7 +73,7 @@ export const ListNft = ({ bunzz, userAddress }) => {
       const _tokenId = event.args[2];
       setTokenId(_tokenId);
       setBase64(null);
-      window.alert("Succeeded to mint");
+      window.alert("Minting successful");
     } catch (err) {
       console.error(err);
     } finally {
@@ -84,19 +85,22 @@ export const ListNft = ({ bunzz, userAddress }) => {
     <div className="wrapper">
       <button className='back-button'><Link to={"/"}>Go back</Link></button>
       <p className="title">
-        Step1: Mint your NFT with IPFS
+         Mint your solution as NFT
       </p>
       <input
         placeholder="Token Name"
         value={name}
         onChange={(e) => setName(e.target.value)}
         type="text"
+        className="input"
       />
       <input
         placeholder="Description"
         value={description}
         onChange={(e) => setDescription(e.target.value)}
         type="text"
+        className="input"
+
       />
       <input type="file" accept="image/*" onChange={select} />
       {base64 ? (
@@ -105,15 +109,15 @@ export const ListNft = ({ bunzz, userAddress }) => {
         <></>
       )}
       {onGoing ? (
-        <div className="center">
-          Loading...
+        <div className="minting">
+          minting..
         </div>
       ) : (
-        <button onClick={submit}>
+        <button className="mintButton" onClick={submit}>
           mint
         </button>
       )}
-      {tokenId ? <p>token ID: {tokenId}</p> : <></>}
+      {tokenId ? <h2>token ID: {tokenId}</h2> : <></>}
     </div>
   );
 };

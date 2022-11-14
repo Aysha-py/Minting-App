@@ -1,0 +1,33 @@
+.wrapper{
+  margin: auto;
+  width: 50%;
+  margin-top: 3rem;
+  padding: 14px;
+ 
+}
+.title{
+  font-size: 18px;
+}
+.input{
+  border: 1px solid grey;
+  margin-bottom: 1.5em;
+}
+      
+.mintButton{
+ background-color: #5a448e;
+ border: 1px solid #5a448e;
+ font-size: 15px;
+ width: 50%;
+ margin: auto;
+ padding: 5px;
+ color: white;
+ margin-top: 10px;
+}
+.minting {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: green;
+  font-size: 15px;
+}

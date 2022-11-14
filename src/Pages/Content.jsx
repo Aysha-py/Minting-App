@@ -18,7 +18,8 @@ const Content = () => {
 	  useEffect(() => {
     setup();
 			}, []);
-	
+
+
 
   const setup = async () => {
     const handler = await bunzz.initializeHandler({
@@ -28,16 +29,18 @@ const Content = () => {
 
     const userAddress = await handler.getSignerAddress();
 
+
     console.log(userAddress);
     setUserAddress(userAddress);
     setHandler(handler);
   };
 
+
 		return (
 				<div className='content-container'>
 				<section className="section">
 					<NavBar />
-						
+
 						<h1>Mint Your NFT</h1>
 					
 						<div className="nftMinter">

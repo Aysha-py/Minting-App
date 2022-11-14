@@ -59,8 +59,9 @@ export const ListNft = ({ bunzz, userAddress }) => {
   const submit = async () => {
     setOnGoing(true);
     try {
+      const MODULE_NAME = "NFT (IPFS Mintable)"
       const metadata = await store(name, description, blob, fileName, type);
-      const contract = await bunzz.getContract("NFT (IPFS Mintable)");
+      const contract = await bunzz.safeMint(MODULE_NAME);
       const inputUrl = metadata.url.replace(/^ipfs:\/\//, "");
 
       const tx = await contract.safeMint(userAddress, inputUrl);

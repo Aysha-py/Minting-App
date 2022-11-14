@@ -9,10 +9,16 @@ const DAPP_ID = process.env.REACT_APP_DAPP_ID;
 const API_KEY = process.env.REACT_APP_API_KEY;
 
 
+
+
 const Content = () => {
+	const [handler, setHandler] = useState();
+	const [userAddress, setUserAddress] = useState("")
+	
 	  useEffect(() => {
     setup();
-  }, []);
+			}, []);
+	
 
   const setup = async () => {
     const handler = await bunzz.initializeHandler({
@@ -26,8 +32,7 @@ const Content = () => {
     setUserAddress(userAddress);
     setHandler(handler);
   };
-	  const [handler, setHandler] = useState();
-  const [userAddress, setUserAddress] = useState("");
+
 		return (
 				<div className='content-container'>
 				<section className="section">

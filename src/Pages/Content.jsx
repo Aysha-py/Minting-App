@@ -1,47 +1,47 @@
-import React from 'react'
-import { useEffect, useState } from "react";
-import { ListNft } from "../components/ListNft";
-import bunzz from "bunzz-sdk";
-import { NavBar } from '../components/Navbar';
+// import React from 'react'
+// import { useEffect, useState } from "react";
+// import { ListNft } from "../components/ListNft";
+// import bunzz from "bunzz-sdk";
+// import { NavBar } from '../components/Navbar';
 
 
-const DAPP_ID = process.env.REACT_APP_DAPP_ID;
-const API_KEY = process.env.REACT_APP_API_KEY;
+// const DAPP_ID = process.env.REACT_APP_DAPP_ID;
+// const API_KEY = process.env.REACT_APP_API_KEY;
 
 
-const Content = () => {
-	  useEffect(() => {
-    setup();
-  }, []);
+// const Content = () => {
+// 	  useEffect(() => {
+//     setup();
+//   }, []);
 
-  const setup = async () => {
-    const handler = await bunzz.initializeHandler({
-      dappId: DAPP_ID,
-      apiKey: API_KEY,
-    });
+//   const setup = async () => {
+//     const handler = await bunzz.initializeHandler({
+//       dappId: DAPP_ID,
+//       apiKey: API_KEY,
+//     });
 
-    const userAddress = await handler.getSignerAddress();
+//     const userAddress = await handler.getSignerAddress();
 
-    console.log(userAddress);
-    setUserAddress(userAddress);
-    setHandler(handler);
-  };
-	  const [handler, setHandler] = useState();
-  const [userAddress, setUserAddress] = useState("");
-		return (
-				<div className='content-container'>
-				<section className="section">
-					<NavBar />
+//     console.log(userAddress);
+//     setUserAddress(userAddress);
+//     setHandler(handler);
+//   };
+// 	  const [handler, setHandler] = useState();
+//   const [userAddress, setUserAddress] = useState("");
+// 		return (
+// 				<div className='content-container'>
+// 				<section className="section">
+// 					<NavBar />
 						
-						<h1>Mint Your NFT</h1>
+// 						<h1>Mint Your NFT</h1>
 					
-						<div className="nftMinter">
-								<ListNft bunzz={handler} userAddress={userAddress} />
-						</div>
+// 						<div className="nftMinter">
+// 								<ListNft bunzz={handler} userAddress={userAddress} />
+// 						</div>
 				
-				</section>
-				</div>
-		)
-}
+// 				</section>
+// 				</div>
+// 		)
+// }
 
-export default Content
+// export default Content

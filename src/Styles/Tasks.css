@@ -82,3 +82,13 @@ h1 {
   color: #fff;
   border: 1px solid #80489c;
 }
+
+span{
+	font-size: 20px;
+	font-weight: 600;
+
+}
+.note{
+	color: green;
+	font-size: 13px;
+}

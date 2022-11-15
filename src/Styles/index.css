@@ -2,10 +2,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 body {
   background: rgb(0, 0, 0);
-  overflow-x: hidden;
 }
 
 .wrapper {
@@ -19,7 +19,6 @@ body {
   width: 200px;
   height: 200px;
 }
-
 
 @import url(../Styles/Navbar.css);
 @import url(../Styles/Content.css);

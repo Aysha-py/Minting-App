@@ -1,139 +1,223 @@
-.task-area{
-	background-color: #000;
-box-sizing: border-box;
-padding: 40px;
-font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+.task-area {
+  background-color: #000;
+  box-sizing: border-box;
+  padding: 40px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+#instagram-activeTask,
+#tiktok-activeTask,
+#twitter-activeTask {
+  text-align: center;
+  border: 1px solid #fff;
+  padding: 20px 0;
+  border-radius: 20px;
+  margin: 40px 0;
+  background-color: #5a448e;
+}
 
+#about-app {
+  color: white;
+  padding-top: 100px;
+  font-size: 20px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  text-align: center;
 }
-#instagram-activeTask,#tiktok-activeTask,#twitter-activeTask{
-text-align: center;
-	border: 1px solid #fff;
-	padding: 20px 0;
-	border-radius: 20px;
-	margin: 40px 0,;
-	background-color: #5a448e;
+.about-info {
+  width: 60%;
+  line-height: 2;
 }
+/* .about-img {
+  width: 50%;
+} */
 
-#about-app{
-	color:white;
-	padding-top: 100px;
-	font-size: 22px;
-	display: flex;
- flex-direction: row-reverse;
-	justify-content: space-between;
-	text-align: center;
-
-	
+.about-img img {
+  width: 500px;
+  height: 500px;
+  border-radius: 500px;
 }
-.about-info{
-width: 60%;
-line-height: 2;
-}
-.about-img{
-	width: 50%;
-
-}
-.about-img {
-
-}
-.about-img img{
-		width:500px;
-	height: 500px;
-	border-radius: 500px;
-}
-.instructions{
-	color:white;
+.instructions {
+  color: white;
   padding: 100px 0;
 
-		text-align: center;
-		line-height: 3;
-
+  text-align: center;
+  line-height: 3;
 }
 
-.instructions-title{
-	border-bottom: 8px solid white;
-	font-size: 24px;
-	color:#80489C;
-	line-height: 2;
+.instructions-title {
+  border-bottom: 8px solid white;
+  font-size: 24px;
+  color: #80489c;
+  line-height: 2;
 }
 .steps {
-
-	width: 50%;
-	margin: auto;
-
+  width: 50%;
+  margin: auto;
 }
-.steps li{
-text-align: justify;
-font-size: 20px;
-margin-left: 100px;
+.steps li {
+  text-align: justify;
+  font-size: 20px;
+  margin-left: 100px;
 }
 
-.task-container{
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-
+.task-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
-.ques-wrapper{
-background:white;
+.ques-wrapper {
+  background: white;
 
-	padding:30px 20px;
-	border: 1px solid;
-	margin: 20px;
-	border-radius: 20px;
+  padding: 30px 20px;
+  border: 1px solid;
+  margin: 20px;
+  border-radius: 20px;
 }
-.mintBtn{
-padding: 10px;
-border-radius: 10px;
-color: white;
-	border: 1px solid #80489C;
-	font-size: 20px;
-	margin: 0 50px;
-
-
+.mintBtn {
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+  border: 1px solid #80489c;
+  font-size: 20px;
+  margin: 0 50px;
+}
+.mintBtn a {
+  text-decoration: none;
 }
 
-.Task h3{
-color: Black;
-margin: 10px;
-font-weight: bolder;
-font-size: 24px;
+.Task h3 {
+  color: Black;
+  margin: 10px;
+  font-weight: bolder;
+  font-size: 24px;
 }
-.Task{
-	color: #80489C;
-	font-family: 'Times New Roman', Times, serif;
-	margin-bottom: 30px;
-	font-size: 22px;
-	text-align: center;
+.Task {
+  color: #80489c;
+  font-family: "Times New Roman", Times, serif;
+  margin-bottom: 30px;
+  font-size: 22px;
+  text-align: center;
 }
 .mintBtn:hover {
   background-color: black;
-		color: #fff;
-		border: 1px solid #80489C;
+  color: #fff;
+  border: 1px solid #80489c;
+}
+#instagram-activeTask,
+#tiktok-activeTask,
+#twitter-activeTask {
+  color: white;
+}
+.our-team {
+  display: flex;
+  flex-direction: row;
+  padding-top: 20px;
+  gap: 30px;
+  justify-content: center;
+}
+.avatar {
+  width: 20%;
+}
+.avatar img {
+  width: 100%;
+  height: auto;
+  border-radius: 10%;
+}
 
-}
-#instagram-activeTask,#tiktok-activeTask,#twitter-activeTask{
-	color: white;
-}
-.our-team{
-
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	padding: 20px;
-	margin: 20px;
-
-}
-.avatar{
-	width: 70%;
-}
-.avatar img{
-	width: 100%;
-	height: auto;
-	border-radius: 2%;
+#Team-members {
+  color: white;
+  text-align: center;
+  margin: 50px 0;
+  font-size: 24px;
 }
 
-#Team-members{
-	color: white;
-	text-align: center;
-	margin: 50px 0;
-	font-size: 24px;
+@media only screen and (max-width: 900px) {
+  #about-app {
+    margin-top: 100px;
+    font-size: 18px;
+  }
+  .about-img img {
+    width: 300px;
+    height: 300px;
+  }
+  /* .about {
+    text-align: center;
+    padding: 10px;
+    color: #ffb997;
+    font-size: 16px;
+  } */
+  /* .section {
+    width: 90%;
+    padding: 30px 10px;
+    border-radius: 0;
+    border: none;
+  }
+  h1 {
+    padding: 0px;
+    margin: 0px;
+    margin-top: 20px;
+  }
+  .nftMinter,
+  .nftChecker {
+    width: 100%;
+    margin-top: 20px;
+  } */
+}
+@media only screen and (max-width: 600px) {
+  /* .app-name2 {
+    display: none;
+  } */
+  #about-app {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 120px;
+  }
+
+  .about-info {
+    width: 100%;
+    padding-top: 10px;
+    margin-bottom: 30px;
+  }
+  .instructions {
+    padding: 30px 0;
+  }
+  .instructions-title {
+    margin-bottom: 10px;
+  }
+  h2 {
+    line-height: 1.5;
+    padding-bottom: 15px;
+  }
+  .steps li {
+    font-size: 18px;
+    margin-left: 0px;
+    width: 100%;
+  }
+  h3 {
+    line-height: 1;
+    padding-bottom: 10px;
+  }
+  .task-requirement {
+    width: 100%;
+    line-height: 2;
+    padding-bottom: 20px;
+    font-weight: 400;
+  }
+  .task-container {
+    display: block;
+  }
+  .mintBtn {
+    margin: auto;
+  }
+  .our-team {
+    font-size: 14px;
+    gap: 10px;
+  }
+  .avatar {
+    width: 70%;
+  }
 }

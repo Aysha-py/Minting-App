@@ -13,7 +13,7 @@ function NavBar() {
             <div className="nav-items">
               <ul>
                 <li>
-                  <a href="#about-app">About</a>
+                  <a href="#">About</a>
                 </li>
                 <li>
                   <a href="#instagram-activeTask">Instagram Bounties</a>

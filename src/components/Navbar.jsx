@@ -13,19 +13,19 @@ function NavBar() {
             <div className="nav-items">
               <ul>
                 <li>
-                  <a href="/">About</a>
+                  <a href="#about-app">About</a>
                 </li>
                 <li>
-                  <a href="/">Instagram Bounties</a>
+                  <a href="#instagram-activeTask">Instagram Bounties</a>
                 </li>
                 <li>
-                  <a href="/">Tiktok Bounties</a>
+                  <a href="#tiktok-activeTask">Tiktok Bounties</a>
                 </li>
                 <li>
-                  <a href="/">Twitter Bounties</a>
+                  <a href="#twitter-activeTask">Twitter Bounties</a>
                 </li>
                 <li>
-                  <a href="/">Team</a>
+                  <a href="#Team-members">Team</a>
                 </li>
               </ul>
             </div>

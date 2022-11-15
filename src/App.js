@@ -1,6 +1,6 @@
 import React from 'react'
 import "../src/Styles/App.css";
-import {Content} from './Pages/Content'
+import Content from '../src/Pages/Content'
 import {ListNft} from './components/ListNft'
 import {Tasks} from "./components/Tasks"
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";

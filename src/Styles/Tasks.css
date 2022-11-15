@@ -1,94 +1,139 @@
-.task-area {
-  background-color: #000;
-  box-sizing: border-box;
-  padding: 40px;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+.task-area{
+	background-color: #000;
+box-sizing: border-box;
+padding: 40px;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
 }
-.activeTask {
-  text-align: center;
-  border: 1px solid #fff;
-  padding: 10px 0;
-  border-radius: 20px;
-  background-color: #5a448e;
+#instagram-activeTask,#tiktok-activeTask,#twitter-activeTask{
+text-align: center;
+	border: 1px solid #fff;
+	padding: 20px 0;
+	border-radius: 20px;
+	margin: 40px 0,;
+	background-color: #5a448e;
 }
 
-.about-app {
-  color: white;
-  padding: 200px 0;
-  font-size: 18px;
-  display: flex;
-  justify-content: space-between;
+#about-app{
+	color:white;
+	padding-top: 100px;
+	font-size: 22px;
+	display: flex;
+ flex-direction: row-reverse;
+	justify-content: space-between;
+	text-align: center;
+
+	
 }
-h1 {
-  font-size: 24px;
+.about-info{
+width: 60%;
+line-height: 2;
 }
-.about-info {
-  width: 50%;
-  line-height: 2;
+.about-img{
+	width: 50%;
+
 }
 .about-img {
-  background: url(../images/ezgif.com-gif-maker-removebg-preview.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  width: 40%;
-  border-radius: 100px;
-}
-.instructions {
-  color: white;
 
-  margin: 0 auto;
-  text-align: center;
-  line-height: 3;
 }
-.instructions-title {
-  border-bottom: 8px solid white;
+.about-img img{
+		width:500px;
+	height: 500px;
+	border-radius: 500px;
+}
+.instructions{
+	color:white;
+  padding: 100px 0;
+
+		text-align: center;
+		line-height: 3;
+
+}
+
+.instructions-title{
+	border-bottom: 8px solid white;
+	font-size: 24px;
+	color:#80489C;
+	line-height: 2;
 }
 .steps {
-  text-align: center;
-  width: 50%;
-  margin: auto;
+
+	width: 50%;
+	margin: auto;
+
 }
-.steps li {
-  text-align: justify;
-  font-size: 20px;
+.steps li{
+text-align: justify;
+font-size: 20px;
+margin-left: 100px;
 }
 
-.task-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-.ques-wrapper {
-  background: white;
+.task-container{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
 
-  padding: 30px 20px;
-  border: 1px solid;
-  margin: 20px;
-  border-radius: 20px;
 }
-.mintBtn {
-  padding: 10px;
-  border-radius: 10px;
-  color: white;
-  border: 1px solid #80489c;
-  font-size: 20px;
+.ques-wrapper{
+background:white;
+
+	padding:30px 20px;
+	border: 1px solid;
+	margin: 20px;
+	border-radius: 20px;
 }
-.Task {
-  color: #80489c;
+.mintBtn{
+padding: 10px;
+border-radius: 10px;
+color: white;
+	border: 1px solid #80489C;
+	font-size: 20px;
+	margin: 0 50px;
+
+
+}
+
+.Task h3{
+color: Black;
+margin: 10px;
+font-weight: bolder;
+font-size: 24px;
+}
+.Task{
+	color: #80489C;
+	font-family: 'Times New Roman', Times, serif;
+	margin-bottom: 30px;
+	font-size: 22px;
+	text-align: center;
 }
 .mintBtn:hover {
   background-color: black;
-  color: #fff;
-  border: 1px solid #80489c;
-}
-
-span{
-	font-size: 20px;
-	font-weight: 600;
+		color: #fff;
+		border: 1px solid #80489C;
 
 }
-.note{
-	color: green;
-	font-size: 13px;
+#instagram-activeTask,#tiktok-activeTask,#twitter-activeTask{
+	color: white;
+}
+.our-team{
+
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	padding: 20px;
+	margin: 20px;
+
+}
+.avatar{
+	width: 70%;
+}
+.avatar img{
+	width: 100%;
+	height: auto;
+	border-radius: 2%;
+}
+
+#Team-members{
+	color: white;
+	text-align: center;
+	margin: 50px 0;
+	font-size: 24px;
 }

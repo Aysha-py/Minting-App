@@ -1,26 +1,23 @@
 export  const data=[
     {
          id:1,
-         question: "Submit bitcoin whiteboard paper",
+         question: "Record a clear Video Talking about the bunzz platform, its uses and how it can make developers life more easier. This should be done on your instagram page",
     },
     {
         id:2,
-        question: "sign up on BUNZZ APP and deploy a module",
+        question: "Update your Instagram story with step by step method on how to install the bunzz sdk",
     },  
     {
         id:3,
-        question: "Add Polygon network to your metamask wallet",
+        question: "Make Buzz Logo your profile picture for a week and make a post per day for 7 days ",
     },
     {
         id:4,
-        question: "make a Twitter post about BUNZZ APP and submit the Url to the post",
+        question: "Create a Video explaining how the bunzz platform makes life for non-coders",
     },
     {
         id:5,
-        question: "submit an image of VITALIK BUTERIN",
+        question: "Explain what Bunzz is. (with or without your face showing)",
     },
-    {
-        id:6,
-        question: "Submit a 2minutes video describing how the EVM works",
-    },
+   
  ]

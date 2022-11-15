@@ -100,7 +100,9 @@ export const ListNft = ({ bunzz, userAddress }) => {
         className="input"
 
       />
-      <input type="file" accept="image/*" onChange={select} />
+      <label class="file-Upload">
+      <input type="file" accept="image/*" onChange={select} />Click To Upload
+      </label>
       {base64 ? (
           <img src={base64} alt="hoge" className="image" />
       ) : (
@@ -112,7 +114,7 @@ export const ListNft = ({ bunzz, userAddress }) => {
         </div>
       ) : (
         <button className="mintButton" onClick={submit}>
-          Mint your solution page screenshot as NFT
+          Mint your solution screenshot as NFT
         </button>
       )}
       {tokenId ? <h2>token ID: {tokenId}</h2> : <></>}

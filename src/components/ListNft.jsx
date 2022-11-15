@@ -75,6 +75,8 @@ export const ListNft = ({ bunzz, userAddress }) => {
       setTokenId(_tokenId);
       setBase64(null);
       setSuccessMsg("Your Submission has been minted Successfully. You can now click on the Go back button above");
+      setName("")
+      setDescription("")
     } catch (err) {
       console.error(err);
     } finally {
@@ -119,7 +121,7 @@ export const ListNft = ({ bunzz, userAddress }) => {
         </button>
       )}
        <input
-        placeholder="Check to see if your transaction is successful"
+        placeholder="Wait to see if your transaction is successful"
         value={successmsg}
         type="text"
         className="input"

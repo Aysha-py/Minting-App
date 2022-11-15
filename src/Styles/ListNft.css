@@ -2,25 +2,46 @@
   margin: auto;
   width: 50%;
   margin-top: 3rem;
-  padding: 14px;
+  padding: 1.5em;
+  background-color:rgb(19, 18, 18);
  
 }
 .title{
   font-size: 18px;
 }
-.input{
-  border: 1px solid grey;
-  margin-bottom: 1.5em;
+.back-button{
+  padding:10px ;
+  margin: auto;
+  /* background-color: #5a448e; */
+ border: 1px solid #5a448e;
+ text-decoration: none;
 }
-      
+.input{
+  border: 1px solid  hsl(0, 0%, 10%);;
+  margin: 1.5em;
+  padding: 1.5em;
+  background-color: rgb(47, 47, 47);
+}
+input[type="file"]{
+display: none;
+}    
+label{
+  border: 1px solid hsl(0, 0%, 10%);
+  background-color: rgb(47, 47, 47);
+  width: 30%;
+  color: rgb(151, 150, 150);
+  padding: 6px;
+  margin:1em;
+  text-align: center;
+}
 .mintButton{
  background-color: #5a448e;
  border: 1px solid #5a448e;
  font-size: 15px;
  width: 50%;
  margin: auto;
- padding: 5px;
- color: white;
+ padding: 10px;
+ color: rgb(216, 212, 212);
  margin-top: 10px;
 }
 .minting {
@@ -29,5 +50,5 @@
   justify-content: center;
   align-items: center;
   color: green;
-  font-size: 15px;
+  font-size: 20px;
 }

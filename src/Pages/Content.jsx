@@ -1,6 +1,7 @@
 import React from 'react'
 import { useEffect, useState } from "react";
 import { ListNft } from "../components/ListNft";
+import { CheckNft } from '../components/CheckNft';
 import bunzz from "bunzz-sdk";
 import { NavBar } from '../components/Navbar';
 
@@ -39,12 +40,12 @@ const Content = () => {
 		return (
 				<div className='content-container'>
 				<section className="section">
-					<NavBar />
-
-						<h1>Mint Your NFT</h1>
+		
 					
 						<div className="nftMinter">
-								<ListNft bunzz={handler} userAddress={userAddress} />
+						<ListNft bunzz={handler} userAddress={userAddress} />
+					<CheckNft bunzz={handler} userAddress={userAddress}/>
+						
 						</div>
 				
 				</section>
@@ -52,4 +53,4 @@ const Content = () => {
 		)
 }
 
-export default Content
+export default Content;

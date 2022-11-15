@@ -58,7 +58,7 @@ function Tasks() {
                 After picking a bounty, do the task required
               </li>
               <li className="task-requirement">
-                After the task, Click on Submit{" "}
+                After the task, Click on Submit
               </li>
               <li className="task-requirement">
                 Fill the submission form and mint the screenshot of your task
@@ -79,7 +79,7 @@ function Tasks() {
                   {task.question}
                 </p>
                 <button className="mintBtn">
-                  <Link to={"./nftlisting"}>Submit Solution</Link>
+                  <Link to={"./mint"}>Submit Solution</Link>
                 </button>
               </div>
             );
@@ -97,7 +97,7 @@ function Tasks() {
                   {task.question}
                 </p>
                 <button className="mintBtn">
-                  <Link to={"./nftlisting"}>Submit Solution</Link>
+                  <Link to={"./mint"}>Submit Solution</Link>
                 </button>
               </div>
             );
@@ -115,7 +115,7 @@ function Tasks() {
                   {task.question}
                 </p>
                 <button className="mintBtn">
-                  <Link to={"./nftlisting"}>Submit Solution</Link>
+                  <Link to={"./mint"}>Submit Solution</Link>
                 </button>
               </div>
             );

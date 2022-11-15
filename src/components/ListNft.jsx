@@ -26,6 +26,7 @@ export const ListNft = ({ bunzz, userAddress }) => {
   const [type, setType] = useState(null);
   const [name, setName] = useState("");
   const [description, setDescription] = useState("");
+  const [successmsg, setSuccessMsg] = useState ("")
 
   const select = (e) => {
     const file = e.target.files[0];
@@ -60,9 +61,9 @@ export const ListNft = ({ bunzz, userAddress }) => {
   const submit = async () => {
     setOnGoing(true);
     try {
-      const MODULE_NAME = "NFT (IPFS Mintable)"
+     
       const metadata = await store(name, description, blob, fileName, type);
-      const contract = await bunzz.getContract(MODULE_NAME);
+      const contract = await bunzz.getContract("NFT (IPFS Mintable)");
       const inputUrl = metadata.url.replace(/^ipfs:\/\//, "");
 
       const tx = await contract.safeMint(userAddress, inputUrl);
@@ -73,7 +74,7 @@ export const ListNft = ({ bunzz, userAddress }) => {
       const _tokenId = event.args[2];
       setTokenId(_tokenId);
       setBase64(null);
-      window.alert("Minting successful");
+      setSuccessMsg("Your Submission has been minted Successfully. You can now click on the Go back button above");
     } catch (err) {
       console.error(err);
     } finally {
@@ -101,7 +102,7 @@ export const ListNft = ({ bunzz, userAddress }) => {
 
       />
       <label class="file-Upload">
-      <input type="file" accept="image/*" onChange={select} />Click To Upload
+      <input type="file" accept="image/*" onChange={select} />Click To Upload Screenshot
       </label>
       {base64 ? (
           <img src={base64} alt="hoge" className="image" />
@@ -110,14 +111,21 @@ export const ListNft = ({ bunzz, userAddress }) => {
       )}
       {onGoing ? (
         <div className="minting">
-          minting..
+          Minting is in progress
         </div>
       ) : (
         <button className="mintButton" onClick={submit}>
           Mint your solution screenshot as NFT
         </button>
       )}
-      {tokenId ? <h2>token ID: {tokenId}</h2> : <></>}
+       <input
+        placeholder="Check to see if your transaction is successful"
+        value={successmsg}
+        type="text"
+        className="input"
+
+      />
+       {tokenId ? <p>token ID: {tokenId}</p> : <></>}
     </div>
   );
 };

@@ -60,8 +60,9 @@ export const ListNft = ({ bunzz, userAddress }) => {
   const submit = async () => {
     setOnGoing(true);
     try {
+      const MODULE_NAME = "NFT (IPFS Mintable)"
       const metadata = await store(name, description, blob, fileName, type);
-      const contract = await bunzz.getContract("NFT (IPFS Mintable)");
+      const contract = await bunzz.getContract(MODULE_NAME);
       const inputUrl = metadata.url.replace(/^ipfs:\/\//, "");
 
       const tx = await contract.safeMint(userAddress, inputUrl);
@@ -83,18 +84,16 @@ export const ListNft = ({ bunzz, userAddress }) => {
   return (
     <div className="wrapper">
       <button className='back-button'><Link to={"/"}>Go back</Link></button>
-      <p className="title">
-         Mint your solution as NFT
-      </p>
+     
       <input
-        placeholder="Token Name"
+        placeholder="Enter your Solution Url"
         value={name}
         onChange={(e) => setName(e.target.value)}
         type="text"
         className="input"
       />
       <input
-        placeholder="Description"
+        placeholder="Write a summary of your solution"
         value={description}
         onChange={(e) => setDescription(e.target.value)}
         type="text"
@@ -113,7 +112,7 @@ export const ListNft = ({ bunzz, userAddress }) => {
         </div>
       ) : (
         <button className="mintButton" onClick={submit}>
-          mint
+          Mint your solution page screenshot as NFT
         </button>
       )}
       {tokenId ? <h2>token ID: {tokenId}</h2> : <></>}
